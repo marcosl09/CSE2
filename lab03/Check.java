@@ -37,10 +37,5 @@ public class Check{
         
         System.out.println("Each person in the group owes $" + dollars + "." + dimes + pennies);
         
-        
-        
-        
-        
-        
     }//end of main method
 }//end of class
