@@ -14,7 +14,7 @@ public class timeSheets{
         int hours;//hours for the day
         int weekHours = 0;//stores the addition of hours for the week
         int total; //stores the total amount of pay for one employee
-        int totalAll = 0;
+        int totalAll = 0;//stores the total amount of pay for all employees
         
         System.out.print("Enter the number of employees: ");//ask the user for number of employees
         employeeNum = Al.nextInt();//stores the number of employees
@@ -29,10 +29,10 @@ public class timeSheets{
             }
             total = weekHours * payPerHour;//finds the total pay
             System.out.println("Pay for employee " + i + " is " + total + " in cents");//displays the total
-            totalAll += total;
+            totalAll += total;//adds up the total
             weekHours = 0;//resets the weekHours so it doesn't keep adding the hours 
         }
-        System.out.println("Pay for all employees is: " + totalAll + " in cents.");
+        System.out.println("Pay for all employees is: " + totalAll + " in cents."); //displays the total for all employees
         
         
     }//end of main method
